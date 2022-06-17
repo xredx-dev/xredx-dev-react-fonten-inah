@@ -11,7 +11,7 @@ import IMG8 from "../img/ep.png";
 const Table2 = () => {
     return (
     <>
-    <div class="overflow-x-auto w-full">
+        <div class="overflow-x-auto w-full">
         <table>
         <tr>
             <th>
@@ -37,7 +37,7 @@ const Table2 = () => {
                 <br />
                 <span class="badge badge-ghost badge-sm">8115000</span>
             </td>
-            </tr>
+        </tr>
         </table>
         <table>
             <tr>
@@ -217,7 +217,7 @@ const Table2 = () => {
                 </tr>
             </tbody>
         </table>
-        </div>
+    </div>
     </>
     );
 };
