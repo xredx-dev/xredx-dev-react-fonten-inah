@@ -1,14 +1,12 @@
-import Table from "./components/Table";
+import { NextUIProvider } from '@nextui-org/react';
 import './App.css';
-import Login from "./components/Login";
-import Forgot from "./components/Forgot";
+import Inventario from './pages/Inventario';
 
 function App() {
   return (
-    <div className="App">
-      
-      <Table/>
-    </div>
+    <NextUIProvider>
+      <Inventario/>
+    </NextUIProvider>
   );
 }
 

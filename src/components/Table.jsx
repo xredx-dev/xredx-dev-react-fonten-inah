@@ -1,225 +1,85 @@
-import React from "react";
-import IMG from "../img/logo.png";
-import IMG1 from "../img/c.png";
-import IMG2 from "../img/v.png";
-import IMG3 from "../img/f.png";
-import IMG4 from "../img/r.png";
-import IMG6 from "../img/fa.png";
-import IMG7 from "../img/ee.png";
-import IMG8 from "../img/ep.png";
+import React from 'react'
 
-const Table2 = () => {
-    return (
-    <>
-        <div class="overflow-x-auto w-full">
-        <table>
+const Table = () => {
+return (
+    <div class="overflow-x-auto">
+    <table class="table table-zebra w-full">
+    
+    <thead>
         <tr>
-            <th>
-                <img src={IMG} href="logo" />
-            </th>
-            <th>
-                <h1>
-                <div class="font-bold">
-                INSTITUTO NACIONAL DE ANTROPOLOGIA E HISTORIA
-                </div>
-                </h1>
-            </th>
-            <th></th>
-            <td>
-                Bienvenido:
-                <br />
-                <span class="badge badge-ghost badge-sm">
-                Ortega Cuapio Norma
-                </span>
-            </td>
-            <td>
-                Unidad Administrativa:
-                <br />
-                <span class="badge badge-ghost badge-sm">8115000</span>
-            </td>
+            <th>No. Inv.</th>
+            <th>Descripcion</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Serie</th>
+            <th>Valor</th>
+            <th>Expediente(folio)</th>
+            <th>Nombre</th>
+            <th>Localidad</th>
+            <th>Centro de Cosotos</th>
+            <th>Status</th>
+            <th>Foto</th>
         </tr>
-        </table>
-        <table>
-            <tr>
-            <td>
-                <div class="font-bold">Buscar:</div>
-            </td>
-            <td>
-                {" "}
-                <input type="text" name="nya" id="nya" />
-            </td>
-            </tr>
-        </table>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <td>Pantalla</td>
+            <td>LG</td>
+            <td>smart</td>
+            <th>s-400</th>
+            <th>$4000</th>
+            <th>F-2550</th>
+            <th>pantalla-LG</th>
+            <th>Edo Mex</th>
+            <th>Toluca</th>
+            <th>Activo</th>
+            <th>
+            <label for="my-modal-5" class="btn modal-button">Foto</label>
 
-        <table>
-            <button class="btn btn-ghost btn-xs">General</button>|
-            <button class="btn btn-ghost btn-xs">Reportes</button>|
-            <button class="btn btn-ghost btn-xs">Ayuda</button>|
-        </table>
-
-        <table>
-            <td>
-                <img
-                style={{
-                resizeMode: "contain",
-                height: 20,
-                width: 20,
-                }}
-                src={IMG1}
-                href="c"
-            />
-            </td>
-            <td>
-            <button class="btn btn-ghost btn-xs">Cambiar Responsable</button>|
-            </td>
-            <td>
-            <img
-                style={{
-                resizeMode: "contain",
-                height: 20,
-                width: 20,
-                }}
-                src={IMG2}
-                href="v"
-            />
-            </td>
-            <td>
-            <button class="btn btn-ghost btn-xs">Ver cedula</button>|
-            </td>
-            <td>
-                <img
-                    style={{
-                    resizeMode: "contain",
-                    height: 20,
-                    width: 20,
-                    }}
-                    src={IMG3}
-                href="f"
-                />
-            </td>
-            <td>
-            <button class="btn btn-ghost btn-xs">Fotografia</button>|
-            </td>
-            <td>
-                <img
-                    style={{
-                    resizeMode: "contain",
-                    height: 20,
-                    width: 20,
-                }}
-                    src={IMG4}
-                    href="r"
-                />
-            </td>
-            <td>
-                <button class="btn btn-ghost btn-xs">Resguardo</button>|
-            </td>
-            <td>
-                <img
-                    style={{
-                    resizeMode: "contain",
-                    height: 20,
-                    width: 20,
-                }}
-                    src={IMG4}
-                    href="r"
-                />
-            </td>
-            <td>
-            <button class="btn btn-ghost btn-xs">Plano</button>|
-            </td>
-            <td>
-                <img
-                    style={{
-                    resizeMode: "contain",
-                    height: 20,
-                    width: 20,
-                    }}
-                    src={IMG6}
-                    href="f"
-                />
-            </td>
-            <td>
-                <button class="btn btn-ghost btn-xs">Factura</button>|
-            </td>
-            <td>
-                <img
-                    style={{
-                resizeMode: "contain",
-                height: 20,
-                width: 20,
-                }}
-                    src={IMG7}
-                    href="ee"
-                />
-            </td>
-            <td>
-            <button class="btn btn-ghost btn-xs">Exportar a excel</button>|
-            </td>
-            <td>
-                <img
-                    style={{
-                    resizeMode: "contain",
-                    height: 20,
-                    width: 20,
-                    }}
-                src={IMG8}
-                href="ep"
-                />
-            </td>
-            <td>
-                <button class="btn btn-ghost btn-xs">Exportar a PDF</button>|
-            </td>
-        </table>
-
-        <table class="table w-full">
-            <thead>
-                <tr>
-                    <th>Selec.</th>
-                    <th>No.inventario</th>
-                    <th>Descripcion</th>
-                    <th>Marca</th>
-                    <th>Modelo</th>
-                    <th>Serie</th>
-                    <th>Valor</th>
-                    <th>Expediente</th>
-                    <th>Nombre</th>
-                    <th>Centro de Costos</th>
-                    <th>Status</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th>
-                    <label>
-                        <input type="checkbox" class="checkbox" />
-                    </label>
-                    </th>
-                    <td>
-                        <div>
-                            <div class="font-bold">10205545654</div>
-                          {/* <div class="text-sm opacity-50">United States</div> */}
-                        </div>
-                    </td>
-                <td>
-                Monitor de color 21
-                <br />
-                {/* <span class="badge badge-ghost badge-sm">Desktop Support Technician</span> */}
-                </td>
-                    <td>Honeywell</td>
-                    <td>HMC21</td>
-                    <td>32656546</td>
-                    <td>$9530.00</td>
-                    <td>4965</td>
-                    <td>Rosas Rosales Armando</td>
-                    <td>300001</td>
-                    <td>Centro INAH Estado de Mexico</td>
-                </tr>
-            </tbody>
-        </table>
+<input type="checkbox" id="my-modal-5" class="modal-toggle" />
+<div class="modal">
+        <div class="modal-box w-11/12 max-w-5xl">
+            <h3 class="font-bold text-lg">Congratulations random Interner user!</h3>
+            <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+            <div class="modal-action">
+            <label for="my-modal-5" class="btn">Yay!</label>
+        </div>
     </div>
-    </>
-    );
-};
+</div>
+            </th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>Pantalla</td>
+            <td>LG</td>
+            <td>smart</td>
+            <th>s-400</th>
+            <th>$4000</th>
+            <th>F-2550</th>
+            <th>pantalla-LG</th>
+            <th>Edo Mex</th>
+            <th>Toluca</th>
+            <th>Activo</th>
+            <th>
+            <label for="my-modal-5" class="btn modal-button">Foto</label>
 
-export default Table2;
+<input type="checkbox" id="my-modal-5" class="modal-toggle" />
+<div class="modal">
+        <div class="modal-box w-11/12 max-w-5xl">
+            <h3 class="font-bold text-lg">Congratulations random Interner user!</h3>
+            <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+            <div class="modal-action">
+            <label for="my-modal-5" class="btn">Yay!</label>
+        </div>
+    </div>
+</div>
+            </th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+)
+}
+
+export default Table
