@@ -1,18 +1,14 @@
 import React from "react";
 import Nav from "../components/Nav";
-import Table from "../components/Table";
-
-const Inventario = () => {
+const Responsable = () => {
   return (
     <>
       <div>
         <Nav />
       </div>
-      <div>
-        <Table />
-      </div>
+      <div>components by Responsable</div>
     </>
   );
 };
 
-export default Inventario;
+export default Responsable;

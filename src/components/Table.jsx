@@ -1,4 +1,6 @@
 import React from 'react'
+import LG from '../img/lg.jpg'
+
 
 const Table = () => {
 return (
@@ -40,10 +42,12 @@ return (
 <input type="checkbox" id="my-modal-5" class="modal-toggle" />
 <div class="modal">
         <div class="modal-box w-11/12 max-w-5xl">
-            <h3 class="font-bold text-lg">Congratulations random Interner user!</h3>
-            <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+            <h3 class="font-bold text-lg">Foto de pantalla</h3>
+            <figure>
+                <img src={LG} alt="lg" />
+            </figure>
             <div class="modal-action">
-            <label for="my-modal-5" class="btn">Yay!</label>
+            <label for="my-modal-5" class="btn">Cerrar</label>
         </div>
     </div>
 </div>
@@ -64,16 +68,18 @@ return (
             <th>
             <label for="my-modal-5" class="btn modal-button">Foto</label>
 
-<input type="checkbox" id="my-modal-5" class="modal-toggle" />
-<div class="modal">
-        <div class="modal-box w-11/12 max-w-5xl">
-            <h3 class="font-bold text-lg">Congratulations random Interner user!</h3>
-            <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-            <div class="modal-action">
-            <label for="my-modal-5" class="btn">Yay!</label>
-        </div>
-    </div>
-</div>
+                    <input type="checkbox" id="my-modal-5" class="modal-toggle" />
+                    <div class="modal">
+                    <div class="modal-box">
+                            <h3 class="font-bold text-lg">Congratulations random Interner user!</h3>
+                            <figure>
+                                <img src={LG} alt="lg" />
+                            </figure>
+                            <div class="modal-action">
+                                <label for="my-modal" class="btn">Cerrar</label>
+                            </div>
+                        </div>
+                    </div>
             </th>
         </tr>
         </tbody>

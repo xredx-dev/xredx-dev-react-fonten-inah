@@ -1,18 +1,16 @@
 import React from "react";
 import Nav from "../components/Nav";
-import Table from "../components/Table";
-
-const Inventario = () => {
+const Factura = () => {
   return (
     <>
       <div>
         <Nav />
       </div>
       <div>
-        <Table />
+        components by Facture
       </div>
     </>
   );
 };
 
-export default Inventario;
+export default Factura;
