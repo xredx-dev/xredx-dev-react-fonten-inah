@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 import IMG from "../img/logo_inah.png";
 
+
 const Login = () => {
   return (
     <div>
@@ -28,11 +29,11 @@ const Login = () => {
                 />
               </div>
               <div class="form-control">
-                <label class="label">
+                <label class="label" >
                   <span class="label-text">Contraseña</span>
                 </label>
                 <input
-                  type="text"
+                  type="password"
                   placeholder="conraseña"
                   class="input input-bordered"
                 />

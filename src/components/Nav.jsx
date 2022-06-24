@@ -5,7 +5,7 @@ import logo from "../img/logo_inah.png";
 
 const table2 = () => {
 return (
-    <div class="navbar bg-base-100">
+<div class="navbar bg-base-100">
         <div class="navbar-start">
             <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -13,7 +13,7 @@ return (
                 </label>
                 <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                   <li><a>Cambiar Responsable</a></li>
-                    <li tabindex="0"><a class="justify-between">Exportar<svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg></a>
+                    <li tabindex="0"><a class="justify-between">Exportar<svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 24"></svg></a>
                   <ul class="p-2">
                     <li><a>Ecxel</a></li>
                     <li><a>PDF</a></li>
@@ -42,7 +42,16 @@ return (
       <li><a href="/Inventario">Inventario</a></li>
     </ul>
   </div>
-  <div class="navbar-end">
+
+
+<div class="navbar-end">
+  
+  <div class="flex-none gap-2">
+    <div class="form-control">
+      <input type="text" placeholder="Search" class="input input-bordered" />
+    </div>
+    </div>
+  <div/>
   <div class="dropdown dropdown-end">
       <label tabindex="0" class="btn btn-ghost btn-circle avatar">
         <div class="w-10 rounded-full">
@@ -59,6 +68,7 @@ return (
       </ul>
     </div>
   </div>
+
 </div>
 );
 };
